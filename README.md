@@ -28,6 +28,7 @@
 - TYPE_YMDHM--年、月、日、时、分
 - TYPE_YMDH--年、月、日、时
 - TYPE_YMD--年、月、日
+- TYPE_YM--年、月
 - TYPE_HM--时、分
 
 ### how to use

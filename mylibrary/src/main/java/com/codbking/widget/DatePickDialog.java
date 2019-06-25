@@ -161,10 +161,10 @@ public class DatePickDialog extends Dialog implements OnChangeLisener {
                 format="HH:mm";
                 break;
             case TYPE_YMD:
-                format = "YYYY-MM-dd";
+                format = "yyyy-MM-dd";
                 break;
             case TYPE_YM:
-                format = "YYYY-MM";
+                format = "yyyy-MM";
                 break;
         }
         return new SimpleDateFormat(format).format(date);

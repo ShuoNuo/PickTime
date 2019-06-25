@@ -47,7 +47,7 @@
  -  **Add the dependency**
 ```sh
 	dependencies {
-	        compile 'com.github.codbking:PickTime:v1.0.1'
+	        api 'com.github.jiangzhuqingfeng:PickTime:1.3'//时间选择器
 	}
 ```
 

@@ -2,18 +2,16 @@ package com.codbking.example;
 
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.codbking.widget.DatePickDialog;
 import com.codbking.widget.OnSureLisener;
 import com.codbking.widget.bean.DateType;
 
-import java.util.Date;
 
-import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ButterKnife.bind(this);
     }
 
     private void showDatePickDialog(DateType type) {
@@ -40,33 +37,32 @@ public class MainActivity extends AppCompatActivity {
         dialog.setOnSureLisener(new OnSureLisener() {
             @Override
             public void onSure(String dateStr) {
-                Toast.makeText(getBaseContext(),dateStr,Toast.LENGTH_SHORT).show();
+                Toast.makeText(getBaseContext(), dateStr, Toast.LENGTH_SHORT).show();
             }
         });
         dialog.show();
     }
 
-    @OnClick({R.id.item1, R.id.item2, R.id.item3, R.id.item4, R.id.item5,R.id.item6})
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.item1:
-                showDatePickDialog(DateType.TYPE_ALL);
-                break;
-            case R.id.item2:
-                showDatePickDialog(DateType.TYPE_YMDHM);
-                break;
-            case R.id.item3:
-                showDatePickDialog(DateType.TYPE_YMDH);
-                break;
-            case R.id.item4:
-                showDatePickDialog(DateType.TYPE_YMD);
-                break;
-            case R.id.item5:
-                showDatePickDialog(DateType.TYPE_HM);
-                break;
-            case R.id.item6:
-                showDatePickDialog(DateType.TYPE_YM);
-                break;
-        }
-    }
+//    public void onClick(View view) {
+//        switch (view.getId()) {
+//            case R.id.item1:
+//                showDatePickDialog(DateType.TYPE_ALL);
+//                break;
+//            case R.id.item2:
+//                showDatePickDialog(DateType.TYPE_YMDHM);
+//                break;
+//            case R.id.item3:
+//                showDatePickDialog(DateType.TYPE_YMDH);
+//                break;
+//            case R.id.item4:
+//                showDatePickDialog(DateType.TYPE_YMD);
+//                break;
+//            case R.id.item5:
+//                showDatePickDialog(DateType.TYPE_HM);
+//                break;
+//            case R.id.item6:
+//                showDatePickDialog(DateType.TYPE_YM);
+//                break;
+//        }
+//    }
 }

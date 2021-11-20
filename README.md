@@ -47,7 +47,7 @@
  -  **Add the dependency**
 ```sh
 	dependencies {
-	        api 'com.github.jiangzhuqingfeng:PickTime:1.3'//时间选择器
+	        api 'com.github.ShuoNuo:PickTime:1.5'//时间选择器
 	}
 ```
 
